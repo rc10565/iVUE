@@ -1250,8 +1250,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0dede', end
 }
 /* Container */
 #simplemodal-container {
-	height:360px;
-	width:600px;
+	height:150px;
+	width:300px;
 	color:#333;
 	background: rgb(255,255,255); /* Old browsers */
 	background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%); /* FF3.6+ */

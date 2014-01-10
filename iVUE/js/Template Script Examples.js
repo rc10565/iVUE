@@ -1066,11 +1066,7 @@ jQuery(function ($) {
 //$('#basic-modal-content').modal();
 
 // Load dialog on click
-$('.basic-modal').click(function (e) {
-$('#basic-modal-content').modal();
 
-return false;
-});
 }); 
 
 // color picker

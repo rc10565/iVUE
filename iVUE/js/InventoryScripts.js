@@ -4,7 +4,8 @@ $( function ()
 {
     $( "#datepicker" ).datepicker( {
         minDate: 0
-    } );
+    });
+    $('#addnote-dialog').dialog({ autoOpen: false });
     $( "#datepicker" ).mask( "99/99/9999" );
     $( "#zipcode" ).mask( "99999-9999" );
     $( '#widget_tab ul' ).idTabs();
@@ -97,7 +98,18 @@ $( function ()
 
 
 
-} );
+});
+
+
+function addNote() {
+   
+    $('#addnote-dialog').dialog("open");
+
+        return false;
+  
+
+
+}
 
 function showTabs()
 {
@@ -423,7 +435,7 @@ function BuildTable( e )
         var i = "<tr data-id=" + e[r].ItemID + ' id="' + e[r].ItemID + '" >';
         i += '<td>' + '<div class= "addItem"><input name="qty" id="qty_' + e[r].ItemID + '"/>';
         i += '<button type="button" name="addButton" class="tipTop" title="Add to Cart" onclick="imageClick(this)";><img src="http://wegmancompany.com/Inventory/images/add_icon.png" alt="Add Item" /></button></div></td>';
-        i += '<td><img  class="tipTop itemimg2" title="Click for Details" id="img_' + e[r].ItemID + '" src="' + e[r].ImageFile + '" onclick="showDetails(' + e[r].ItemID + ');"/><span class="tiptop description" title="Click for Details" onclick="showDetails(' + e[r].ItemID + ');"><b>' + $.trim( e[r].Item ) + "</b></span></td>";
+        i += '<td><img  class="tipTopL itemimg2" title="Click for Details" id="img_' + e[r].ItemID + '" src="' + e[r].ImageFile + '" onclick="showDetails(' + e[r].ItemID + ');"/><span class="tiptop description" title="Click for Details" onclick="showDetails(' + e[r].ItemID + ');"><b>' + $.trim( e[r].Item ) + "</b></span></td>";
         i += '<td class="center">' + e[r].Height + "</td>";
         i += '<td class="center">' + e[r].Width + "</td>";
         i += '<td class="center">' + e[r].AssetType + "</td>";

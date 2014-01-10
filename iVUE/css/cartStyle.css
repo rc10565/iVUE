@@ -310,3 +310,11 @@ input:focus
     -moz-border-radius: 3px;
     border-radius: 3px;
 }
+
+#addnote {
+    background: url('../images/sprite-icons/extras/icon_color_clr.png') no-repeat -600px -22px;
+    display: inline-block;
+    width: 19px;
+    height: 17px;
+    position: absolute;
+}
