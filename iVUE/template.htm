@@ -1,0 +1,173 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <link href="http://wegmancompany.com/Inventory/images/favicon.ico" rel="shortcut icon" type="image/ico">
+    <title>Wegman Company Inventory Portal</title>
+    <link href="http://wegmancompany.com/Inventory/css/reset.css" rel="stylesheet" type="text/css">
+    <link href="http://wegmancompany.com/Inventory/css/layout.css" rel="stylesheet" type="text/css">
+    <link href="http://wegmancompany.com/Inventory/css/themes.css" rel="stylesheet" type="text/css">
+    <link href="http://wegmancompany.com/Inventory/css/typography.css" rel="stylesheet" type="text/css">
+    <link href="http://wegmancompany.com/Inventory/css/styles.css" rel="stylesheet" type="text/css">
+    <link href="http://wegmancompany.com/Inventory/css/shCore.css" rel="stylesheet" type="text/css">
+    <link href="http://wegmancompany.com/Inventory/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="http://wegmancompany.com/Inventory/css/jquery.jqplot.css" rel="stylesheet" type="text/css">
+    <link href="http://wegmancompany.com/Inventory/css/jquery-ui-1.8.18.custom.css" rel="stylesheet" type="text/css">
+    <link href="http://wegmancompany.com/Inventory/css/data-table.css" rel="stylesheet" type="text/css">
+    <link href="http://wegmancompany.com/Inventory/css/form.css" rel="stylesheet" type="text/css">
+    <link href="http://wegmancompany.com/Inventory/css/ui-elements.css" rel="stylesheet" type="text/css">
+    <link href="http://wegmancompany.com/Inventory/css/wizard.css" rel="stylesheet" type="text/css">
+    <link href="http://wegmancompany.com/Inventory/css/sprite.css" rel="stylesheet" type="text/css">
+    <link href="http://wegmancompany.com/Inventory/css/gradient.css" rel="stylesheet" type="text/css">
+    <link href="http://wegmancompany.com/Inventory/css/cartStyle.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        #selCompanies
+        {
+            vertical-align: middle;
+        }
+        .loader, #hiddenDiv
+        {
+            display: none;
+        }
+        .dataTables_filter
+        {
+            display: none;
+        }
+        
+        .shoppingcart a .icon, .carticon
+        {
+            background: url('http://wegmancompany.com/Inventory/images/sprite-icons/extras/icon_grb24x24.png') no-repeat -40px -43px;
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            border: #9bdoea 1px solid;
+            width: 40px;
+            height: 38px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+    </style>
+    <!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="css-bingo/ie/ie7.css" />
+<![endif]-->
+    <!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="css-bingo/ie/ie8.css" />
+<![endif]-->
+    <!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="css-bingo/ie/ie9.css" />
+<![endif]-->
+    <!-- Jquery -->
+    <script src="http://wegmancompany.com/Inventory/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery.ui.touch-punch.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/chosen.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/arg.js.v1.1.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/uniform.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/bootstrap-dropdown.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/bootstrap-colorpicker.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/sticky.full.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery.noty.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/selectToUISlider.jQuery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/fg.menu.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery.tagsinput.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery.cleditor.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery.tipsy.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery.peity.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery.simplemodal.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery.jBreadCrumb.1.1.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery.colorbox-min.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery.idTabs.min.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery.multiFieldExtender.min.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery.confirm.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/elfinder.min.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/accordion.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/autogrow.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/check-all.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/data-table.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/ZeroClipboard.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/TableTools.min.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jeditable.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/ColVis.min.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/duallist.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/easing.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/full-calendar.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/input-limiter.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/inputmask.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/iphone-style-checkbox.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/meta-data.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/quicksand.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/raty.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/smart-wizard.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/stepy.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/treeview.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/ui-accordion.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/vaidation.jquery.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/mosaic.1.0.1.min.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery.collapse.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery.autocomplete.min.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/localdata.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/excanvas.min.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery.jqplot.min.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/jquery.dataTables.columnFilter.js" type="text/javascript"></script>
+    <script src="http://wegmancompany.com/Inventory/js/custom-scripts.js" type="text/javascript"></script>
+</head>
+<body id="theme-default" class="full_block">
+    <div id="left_bar">
+        <div id="primary_nav" class="g_blue">
+            <!--Left side large icon nav here-->
+        </div>
+        <div id="start_menu">
+            <!--Bottom left dropdown menu here-->
+        </div>
+        <div id="sidebar">
+            <div id="secondary_nav">
+                <!--Sidebar main page navigation list here-->
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="header" class="blue_lin">
+            <div class="header_left">
+                <div class="logo">
+                    <img src="http://wegmancompany.com/Inventory/images/wam-logo.png" alt="Wegman Asset Management Portal">
+                </div>
+                <div id="responsive_mnu">
+                    <!--Only show for iPhone/iPad/mobile-->
+                </div>
+            </div>
+            <div class="header_right">
+                <div id="top_notification">
+                
+                </div>
+                <div id="user_nav">
+                    <!--Admin/User nav and logout link here-->
+                </div>
+            </div>
+        </div>
+        <div class="page_title">
+            <span class="title_icon"><span class="computer_imac"></span></span>
+            <h3>
+                Dashboard</h3>
+            <div class="top_search">
+                <!--Search box here-->
+            </div>
+        </div>
+        <div id="content">
+            <div class="grid_container">
+                <div class="grid_12 full_block">
+                    <div class="widget_wrap">
+                        <div class="widget_content">
+                            <!--Widget content here-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="clear"></span>
+        </div>
+    </div>
+</body>
+</html>

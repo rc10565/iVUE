@@ -1,0 +1,350 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>Wegman Inventory - Invite User</title>
+    <link href="css/reset.css" rel="stylesheet" type="text/css">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <link href="css/themes.css" rel="stylesheet" type="text/css">
+    <link href="css/typography.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/shCore.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.jqplot.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery-ui-1.8.18.custom.css" rel="stylesheet" type="text/css">
+    <link href="css/data-table.css" rel="stylesheet" type="text/css">
+    <link href="css/form.css" rel="stylesheet" type="text/css">
+    <link href="css/ui-elements.css" rel="stylesheet" type="text/css">
+    <link href="css/wizard.css" rel="stylesheet" type="text/css">
+    <link href="css/sprite.css" rel="stylesheet" type="text/css">
+    <link href="css/gradient.css" rel="stylesheet" type="text/css">
+    <!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="css/ie/ie7.css" />
+<![endif]-->
+    <!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="css/ie/ie8.css" />
+<![endif]-->
+    <!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="css/ie/ie9.css" />
+<![endif]-->
+    <!-- Jquery -->
+    <script src="js/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
+    <script src="js/chosen.jquery.js" type="text/javascript"></script>
+    <script src="js/uniform.jquery.js" type="text/javascript"></script>
+    <script src="js/bootstrap-dropdown.js" type="text/javascript"></script>
+    <script src="js/bootstrap-colorpicker.js" type="text/javascript"></script>
+    <script src="js/sticky.full.js" type="text/javascript"></script>
+    <script src="js/jquery.noty.js" type="text/javascript"></script>
+    <script src="js/selectToUISlider.jQuery.js" type="text/javascript"></script>
+    <script src="js/fg.menu.js" type="text/javascript"></script>
+    <script src="js/jquery.tagsinput.js" type="text/javascript"></script>
+    <script src="js/jquery.cleditor.js" type="text/javascript"></script>
+    <script src="js/jquery.tipsy.js" type="text/javascript"></script>
+    <script src="js/jquery.peity.js" type="text/javascript"></script>
+    <script src="js/jquery.simplemodal.js" type="text/javascript"></script>
+    <script src="js/jquery.jBreadCrumb.1.1.js" type="text/javascript"></script>
+    <script src="js/jquery.colorbox-min.js" type="text/javascript"></script>
+    <script src="js/jquery.idTabs.min.js" type="text/javascript"></script>
+    <script src="js/jquery.multiFieldExtender.min.js" type="text/javascript"></script>
+    <script src="js/jquery.confirm.js" type="text/javascript"></script>
+    <script src="js/elfinder.min.js" type="text/javascript"></script>
+    <script src="js/accordion.jquery.js" type="text/javascript"></script>
+    <script src="js/autogrow.jquery.js" type="text/javascript"></script>
+    <script src="js/check-all.jquery.js" type="text/javascript"></script>
+    <script src="js/data-table.jquery.js" type="text/javascript"></script>
+    <script src="js/ZeroClipboard.js" type="text/javascript"></script>
+    <script src="js/TableTools.min.js" type="text/javascript"></script>
+    <script src="js/jeditable.jquery.js" type="text/javascript"></script>
+    <script src="js/duallist.jquery.js" type="text/javascript"></script>
+    <script src="js/easing.jquery.js" type="text/javascript"></script>
+    <script src="js/full-calendar.jquery.js" type="text/javascript"></script>
+    <script src="js/input-limiter.jquery.js" type="text/javascript"></script>
+    <script src="js/inputmask.jquery.js" type="text/javascript"></script>
+    <script src="js/iphone-style-checkbox.jquery.js" type="text/javascript"></script>
+    <script src="js/meta-data.jquery.js" type="text/javascript"></script>
+    <script src="js/quicksand.jquery.js" type="text/javascript"></script>
+    <script src="js/raty.jquery.js" type="text/javascript"></script>
+    <script src="js/smart-wizard.jquery.js" type="text/javascript"></script>
+    <script src="js/stepy.jquery.js" type="text/javascript"></script>
+    <script src="js/treeview.jquery.js" type="text/javascript"></script>
+    <script src="js/ui-accordion.jquery.js" type="text/javascript"></script>
+    <script src="js/vaidation.jquery.js" type="text/javascript"></script>
+    <script src="js/mosaic.1.0.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery.collapse.js" type="text/javascript"></script>
+    <script src="js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="js/jquery.autocomplete.min.js" type="text/javascript"></script>
+    <script src="js/localdata.js" type="text/javascript"></script>
+    <script src="js/excanvas.min.js" type="text/javascript"></script>
+    <script src="js/jquery.jqplot.min.js" type="text/javascript"></script>
+    <script src="js/custom-scripts.js" type="text/javascript"></script>
+</head>
+<body id="theme-default" class="full_block">
+ <div id="container">
+        <div id="header" class="blue_lin">
+            <div class="header_left">
+                <div class="logo">
+                    <img src="images/wam-logo.png" alt="Wegman Asset Management">
+                </div>
+              
+            </div>
+            <div class="header_right">
+                <!--<div id="top_notification">
+                    <ul>
+                     
+                    </ul>
+                </div>-->
+            </div>
+        </div>
+        <div class="page_title">
+            <span class="title_icon"><span class="coverflow"></span></span>
+            <h3>
+                Client Administration</h3>
+          
+            <div class="top_search">
+               
+            </div>
+        </div>
+        <div class="switch_bar">
+		<ul>
+			<li>
+			<a href="#" class="showme"><span class="stats_icon user_sl"></span><span class="label">Invite User</span></a>
+			</li>
+			
+		
+		</ul>
+	</div>
+
+
+
+
+        <div id="content">
+            <div class="grid_container">
+                <ul>
+        
+                    <li>
+                        <!-- modal content -->
+                        <div id="osx-modal-content">
+                            <div id="osx-modal-title" class="blue_d">
+                                Invite New User
+                            </div>
+                            <div class="close">
+                                <a href="#" class="simplemodal-close">x</a>
+                            </div>
+                            <div id="osx-modal-data">
+                                <form id="inviteForm" autocomplete="on" action="#" class="form_container left_label">
+                                <div class="form_grid_12">
+                                    <label class="field_title" id="Label4" for="selCompanies">
+                                        Select a Company<span class="req">*</span></label>
+                                    <select id="selCompanies">
+                                    </select>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="form_grid_12">
+                                            <label class="field_title" id="Label1" for="firstname">
+                                                First Name<span class="req">*</span></label>
+                                            <div class="form_input">
+                                                <input id="firstname" name="firstname" type="text" value="" maxlength="50" class="large" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form_grid_12">
+                                            <label class="field_title" id="Label2" for="lastname">
+                                                Last Name<span class="req">*</span></label>
+                                            <div class="form_input">
+                                                <input id="lastname" name="lastname" type="text" value="" maxlength="50" class="large">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form_grid_12">
+                                            <label class="field_title" id="Label3" for="email">
+                                                Email Address<span class="req">*</span></label>
+                                            <div class="form_input">
+                                                <input id="email" name="email" type="text" value="" maxlength="150" class="large" />
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="form_grid_12">
+                                            <div class="form_input">
+                                                <button id="save" name="save" type="button" class="btn_small btn_blue">
+                                                    <span>Send Invite</span></button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                </form>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="success_c">
+                </div>
+            </div>
+            <span class="clear"></span>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        SetValidators();
+        LoadCompanyDropDown();
+        $('#save').click(function (e) {
+            e.preventDefault();
+            if ($("#inviteForm").valid()) {
+
+                GetFormData()
+            }
+
+        })
+    });
+
+    function showModal() { alert("hi!"); };
+
+    function Errornoty() {
+        var options = JSON.parse('{"text":"That Email address already exists! - Please ReEnter","layout":"top","type":"error"}');
+        noty(options);
+    }
+
+
+
+
+
+
+
+    function SetValidators() {
+
+        $("#inviteForm").validate({
+            rules: {
+                firstname: "required",
+                lastname: "required",
+                email: {
+                    required: true,
+                    email: true
+                },
+                selcompanies: {required: true}
+
+            },
+            messages: {
+
+                firstname: "First name is required",
+                lastname: "Lastname is required",
+                email: { required: "Email address is required", email: "Invalid Email address" },
+                selcompanies: {required: "You must select a company first"}
+
+            }
+
+        });
+
+
+
+
+
+
+
+
+
+
+
+    };
+
+    function GetFormData() {
+        //    debugger;
+        var NewUser = new Object;
+
+        var DATA = new Object;
+        var dt2 = new Object;
+
+        NewUser.firstname = $('#firstname').val();
+        NewUser.lastname = $('#lastname').val();
+        NewUser.email = $('#email').val();
+        NewUser.CompanyID = $('#selCompanies').val();
+        dt2.NewUser = NewUser
+
+
+
+        DATA = JSON.stringify(dt2);
+        //alert(DATA);
+
+        $.ajax({
+            type: "POST",
+            url: "pageLogic.aspx/InviteUser",
+            data: DATA,
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (msg) {
+                SendInvite(msg.d);
+
+
+
+                //               do something here on success show noty (pause 1000) then redirect to main customer main view
+
+            }
+        });
+
+    };
+
+    function SendInvite(UserID) {
+        //    debugger;
+
+        if (UserID == -99) {Errornoty();$("#email").val('');$("#email").focus();  }
+        else {
+
+            $(".success_c").click();
+
+            $(".simplemodal-close").click();
+            window.location.href = "../register.aspx?u=" + UserID;
+        }
+
+    };
+
+    function LoadCompanyDropDown() {
+
+        $.ajax({
+            url: 'pagelogic.aspx/GetCompanies',
+            type: 'POST',
+            data: JSON.stringify({ foo: null }),
+            contentType: 'application/json; charset=utf-8',
+            dataType: 'json',
+            success: function (msg) { OnSuccess(msg.d); },
+            error: function (msg) { OnError(msg.d); }
+
+        });
+
+
+    };
+
+
+
+    function OnSuccess(msg) {
+
+        //    debugger;
+        var $select = $('#selCompanies');
+        $select.empty().append('<option value="0">Select a Company...</option>');
+        for (var post in msg) { $select.append($("<option></option>").val(msg[post].companyid).html(msg[post].companyName)); }
+
+
+
+
+
+
+    };
+
+    function OnError(msg) { alert('ajax error') };
+
+
+
+    function wait(sec) {
+        var duration
+        duration = sec * 1000;
+
+
+        setTimeout(wait, duration);
+    };
+</script>
+</html>

@@ -1,0 +1,1039 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{6262EC5E-C520-4651-88F4-83D65D8D1F20}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>iVUE</RootNamespace>
+    <AssemblyName>iVUE</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>iVUE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>iVUE.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="404.html" />
+    <Content Include="AssetImages\2024895475923021781.png" />
+    <Content Include="AssetImages\googleballs-animated.gif" />
+    <Content Include="AssetImages\images.jpg" />
+    <Content Include="AssetImages\noimage.jpg" />
+    <Content Include="AssetImages\stupid.gif" />
+    <Content Include="AssetImages\tkvtA.gif" />
+    <Content Include="AssetImages\withstupid.gif" />
+    <Content Include="AssetImages\WM_AC0001.JPG" />
+    <Content Include="AssetImages\WM_AC0002.JPG" />
+    <Content Include="AssetImages\WM_AC0003.JPG" />
+    <Content Include="AssetImages\WM_AC0004.JPG" />
+    <Content Include="AssetImages\WM_AC0005.JPG" />
+    <Content Include="AssetImages\WM_AC0006.JPG" />
+    <Content Include="AssetImages\WM_AC0013.JPG" />
+    <Content Include="AssetImages\WM_AC0017.JPG" />
+    <Content Include="AssetImages\WM_AC0018.JPG" />
+    <Content Include="AssetImages\WM_AC0019.JPG" />
+    <Content Include="AssetImages\WM_AC0020.JPG" />
+    <Content Include="AssetImages\WM_AC0021.JPG" />
+    <Content Include="AssetImages\WM_AC0022.JPG" />
+    <Content Include="AssetImages\WM_AC0023.JPG" />
+    <Content Include="AssetImages\WM_AC0024.JPG" />
+    <Content Include="AssetImages\WM_AC0025.JPG" />
+    <Content Include="AssetImages\WM_AC0026.JPG" />
+    <Content Include="AssetImages\WM_AC0028.JPG" />
+    <Content Include="AssetImages\WM_AC0029.JPG" />
+    <Content Include="AssetImages\WM_AC0030.JPG" />
+    <Content Include="AssetImages\WM_AC0031.JPG" />
+    <Content Include="AssetImages\WM_AC0038.JPG" />
+    <Content Include="AssetImages\WM_AC0039.JPG" />
+    <Content Include="AssetImages\WM_AC0040.JPG" />
+    <Content Include="AssetImages\WM_BA0001.JPG" />
+    <Content Include="AssetImages\WM_BA0002.JPG" />
+    <Content Include="AssetImages\WM_BA0003.JPG" />
+    <Content Include="AssetImages\WM_BA0004.JPG" />
+    <Content Include="AssetImages\WM_BA0005.JPG" />
+    <Content Include="AssetImages\WM_BA0006.JPG" />
+    <Content Include="AssetImages\WM_BA0007.JPG" />
+    <Content Include="AssetImages\WM_BA0008.JPG" />
+    <Content Include="AssetImages\WM_BA0009.JPG" />
+    <Content Include="AssetImages\WM_BA0010.JPG" />
+    <Content Include="AssetImages\WM_BA0011.JPG" />
+    <Content Include="AssetImages\WM_BA0012.JPG" />
+    <Content Include="AssetImages\WM_BA0013.JPG" />
+    <Content Include="AssetImages\WM_BA0014.JPG" />
+    <Content Include="AssetImages\WM_BD0001.jpg" />
+    <Content Include="AssetImages\WM_BD0003.jpg" />
+    <Content Include="AssetImages\WM_BD0004.jpg" />
+    <Content Include="AssetImages\WM_BD0009.jpg" />
+    <Content Include="AssetImages\WM_BD0010.jpg" />
+    <Content Include="AssetImages\WM_BD0011.jpg" />
+    <Content Include="AssetImages\WM_BO0001.JPG" />
+    <Content Include="AssetImages\WM_BO0003.JPG" />
+    <Content Include="AssetImages\WM_BO0010.JPG" />
+    <Content Include="AssetImages\WM_BO0011.JPG" />
+    <Content Include="AssetImages\WM_BO0012.JPG" />
+    <Content Include="AssetImages\WM_BO0015.JPG" />
+    <Content Include="AssetImages\WM_BO0019.JPG" />
+    <Content Include="AssetImages\WM_CA0003.jpg" />
+    <Content Include="AssetImages\WM_CA0009.jpg" />
+    <Content Include="AssetImages\WM_CA0010.jpg" />
+    <Content Include="AssetImages\WM_CA0011.jpg" />
+    <Content Include="AssetImages\WM_CA0013.jpg" />
+    <Content Include="AssetImages\WM_CA0014.jpg" />
+    <Content Include="AssetImages\WM_CA0015.jpg" />
+    <Content Include="AssetImages\WM_CA0016.jpg" />
+    <Content Include="AssetImages\WM_CA0018.jpg" />
+    <Content Include="AssetImages\WM_CA0019.jpg" />
+    <Content Include="AssetImages\WM_CA0023.jpg" />
+    <Content Include="AssetImages\WM_CC0001.jpg" />
+    <Content Include="AssetImages\WM_CC0002.jpg" />
+    <Content Include="AssetImages\WM_CC0003.jpg" />
+    <Content Include="AssetImages\WM_CC0006.jpg" />
+    <Content Include="AssetImages\WM_CC0008.jpg" />
+    <Content Include="AssetImages\WM_CC0009.jpg" />
+    <Content Include="AssetImages\WM_CC0011.jpg" />
+    <Content Include="AssetImages\WM_CC0012.jpg" />
+    <Content Include="AssetImages\WM_CC0013.jpg" />
+    <Content Include="AssetImages\WM_CC0014.jpg" />
+    <Content Include="AssetImages\WM_CC0015.jpg" />
+    <Content Include="AssetImages\WM_CC0016.jpg" />
+    <Content Include="AssetImages\WM_CC0017.jpg" />
+    <Content Include="AssetImages\WM_CC0018.jpg" />
+    <Content Include="AssetImages\WM_CC0019.jpg" />
+    <Content Include="AssetImages\WM_CC0020.jpg" />
+    <Content Include="AssetImages\WM_CC0021.jpg" />
+    <Content Include="AssetImages\WM_CC0028.jpg" />
+    <Content Include="AssetImages\WM_CH.jpg" />
+    <Content Include="AssetImages\WM_CH0003.jpg" />
+    <Content Include="AssetImages\WM_CH0004.jpg" />
+    <Content Include="AssetImages\WM_CH0005.jpg" />
+    <Content Include="AssetImages\WM_CH0007.jpg" />
+    <Content Include="AssetImages\WM_CH0008.jpg" />
+    <Content Include="AssetImages\WM_CH0009.jpg" />
+    <Content Include="AssetImages\WM_CH0010.jpg" />
+    <Content Include="AssetImages\WM_CH0011.jpg" />
+    <Content Include="AssetImages\WM_CH0012.jpg" />
+    <Content Include="AssetImages\WM_CH0013.jpg" />
+    <Content Include="AssetImages\WM_CH0017.jpg" />
+    <Content Include="AssetImages\WM_CH0020.jpg" />
+    <Content Include="AssetImages\WM_CH0023.jpg" />
+    <Content Include="AssetImages\WM_CH0027.jpg" />
+    <Content Include="AssetImages\WM_CH0028.jpg" />
+    <Content Include="AssetImages\WM_CH0033.jpg" />
+    <Content Include="AssetImages\WM_CH0034.jpg" />
+    <Content Include="AssetImages\WM_CH0035.jpg" />
+    <Content Include="AssetImages\WM_CH0037.jpg" />
+    <Content Include="AssetImages\WM_CH0039.jpg" />
+    <Content Include="AssetImages\WM_CH0040.jpg" />
+    <Content Include="AssetImages\WM_CH0041.jpg" />
+    <Content Include="AssetImages\WM_CH0042.jpg" />
+    <Content Include="AssetImages\WM_CH0051.jpg" />
+    <Content Include="AssetImages\WM_CH0054.jpg" />
+    <Content Include="AssetImages\WM_CH0055.jpg" />
+    <Content Include="AssetImages\WM_CH0056.jpg" />
+    <Content Include="AssetImages\WM_CH0058.jpg" />
+    <Content Include="AssetImages\WM_CH0059.jpg" />
+    <Content Include="AssetImages\WM_CH0060.jpg" />
+    <Content Include="AssetImages\WM_CH0061.jpg" />
+    <Content Include="AssetImages\WM_CH0062.jpg" />
+    <Content Include="AssetImages\WM_CH0063.jpg" />
+    <Content Include="AssetImages\WM_CH0064.jpg" />
+    <Content Include="AssetImages\WM_CH0065.jpg" />
+    <Content Include="AssetImages\WM_CH0066.jpg" />
+    <Content Include="AssetImages\WM_CH0067.jpg" />
+    <Content Include="AssetImages\WM_CH0068.jpg" />
+    <Content Include="AssetImages\WM_CH0069.jpg" />
+    <Content Include="AssetImages\WM_CH0072.jpg" />
+    <Content Include="AssetImages\WM_CH0073.jpg" />
+    <Content Include="AssetImages\WM_CH0074.jpg" />
+    <Content Include="AssetImages\WM_CH0075.jpg" />
+    <Content Include="AssetImages\WM_CH0076.jpg" />
+    <Content Include="AssetImages\WM_CH0077.jpg" />
+    <Content Include="AssetImages\WM_CH0082.jpg" />
+    <Content Include="AssetImages\WM_CH0083.jpg" />
+    <Content Include="AssetImages\WM_CH0084.jpg" />
+    <Content Include="AssetImages\WM_CH0100.jpg" />
+    <Content Include="AssetImages\WM_CH0103.jpg" />
+    <Content Include="AssetImages\WM_CH0122.jpg" />
+    <Content Include="AssetImages\WM_CH0127.jpg" />
+    <Content Include="AssetImages\WM_CH0131.jpg" />
+    <Content Include="AssetImages\WM_CH0144.jpg" />
+    <Content Include="AssetImages\WM_CH0193.jpg" />
+    <Content Include="AssetImages\WM_CH0196.jpg" />
+    <Content Include="AssetImages\WM_CH0198.jpg" />
+    <Content Include="AssetImages\WM_CH0199.jpg" />
+    <Content Include="AssetImages\WM_CH0217.jpg" />
+    <Content Include="AssetImages\WM_CH0218.jpg" />
+    <Content Include="AssetImages\WM_CH0219.jpg" />
+    <Content Include="AssetImages\WM_CH0220.jpg" />
+    <Content Include="AssetImages\WM_CH0224.jpg" />
+    <Content Include="AssetImages\WM_CH0231.jpg" />
+    <Content Include="AssetImages\WM_CH0244.jpg" />
+    <Content Include="AssetImages\WM_CH0245.jpg" />
+    <Content Include="AssetImages\WM_CH0250.jpg" />
+    <Content Include="AssetImages\WM_CH0251.jpg" />
+    <Content Include="AssetImages\WM_CH0252.jpg" />
+    <Content Include="AssetImages\WM_CH0253.jpg" />
+    <Content Include="AssetImages\WM_CH0254.jpg" />
+    <Content Include="AssetImages\WM_CH0255.jpg" />
+    <Content Include="AssetImages\WM_CH0256.jpg" />
+    <Content Include="AssetImages\WM_CH0259.jpg" />
+    <Content Include="AssetImages\WM_CH0260.jpg" />
+    <Content Include="AssetImages\WM_CH0261.jpg" />
+    <Content Include="AssetImages\WM_CH0263.jpg" />
+    <Content Include="AssetImages\WM_CH0264.jpg" />
+    <Content Include="AssetImages\WM_CH0266.jpg" />
+    <Content Include="AssetImages\WM_CH0268.jpg" />
+    <Content Include="AssetImages\WM_CH0269.jpg" />
+    <Content Include="AssetImages\WM_CH0270.jpg" />
+    <Content Include="AssetImages\WM_CH0271.jpg" />
+    <Content Include="AssetImages\WM_CH0272.jpg" />
+    <Content Include="AssetImages\WM_CH0273.jpg" />
+    <Content Include="AssetImages\WM_CH0274.jpg" />
+    <Content Include="AssetImages\WM_CH0275.jpg" />
+    <Content Include="AssetImages\WM_CH0276.jpg" />
+    <Content Include="AssetImages\WM_CH0277.jpg" />
+    <Content Include="AssetImages\WM_CH0278.jpg" />
+    <Content Include="AssetImages\WM_CH0279.jpg" />
+    <Content Include="AssetImages\WM_CH0280.jpg" />
+    <Content Include="AssetImages\WM_CH0281.jpg" />
+    <Content Include="AssetImages\WM_CH0282.jpg" />
+    <Content Include="AssetImages\WM_CN0011.jpg" />
+    <Content Include="AssetImages\WM_CN0013.jpg" />
+    <Content Include="AssetImages\WM_CN0015.jpg" />
+    <Content Include="AssetImages\WM_CN0016.jpg" />
+    <Content Include="AssetImages\WM_CN0031.jpg" />
+    <Content Include="AssetImages\WM_CN0032.jpg" />
+    <Content Include="AssetImages\WM_CN0033.jpg" />
+    <Content Include="AssetImages\WM_CN0037.jpg" />
+    <Content Include="AssetImages\WM_DE0003.jpg" />
+    <Content Include="AssetImages\WM_DE0032.jpg" />
+    <Content Include="AssetImages\WM_DE0043.jpg" />
+    <Content Include="AssetImages\WM_DE0052.jpg" />
+    <Content Include="AssetImages\WM_DE0053.jpg" />
+    <Content Include="AssetImages\WM_DE0057.jpg" />
+    <Content Include="AssetImages\WM_DE0058.jpg" />
+    <Content Include="AssetImages\WM_FD0039.jpg" />
+    <Content Include="AssetImages\WM_FI0131.jpg" />
+    <Content Include="AssetImages\WM_FI0132.jpg" />
+    <Content Include="AssetImages\WM_OH0035.jpg" />
+    <Content Include="AssetImages\WM_PA.jpg" />
+    <Content Include="AssetImages\WM_PA0253.jpg" />
+    <Content Include="AssetImages\WM_PA0254.jpg" />
+    <Content Include="AssetImages\WM_PA0258.jpg" />
+    <Content Include="AssetImages\WM_PA0259.jpg" />
+    <Content Include="AssetImages\WM_PA0260.jpg" />
+    <Content Include="AssetImages\WM_PA0261.jpg" />
+    <Content Include="AssetImages\WM_PA0262.jpg" />
+    <Content Include="AssetImages\WM_PA0264.jpg" />
+    <Content Include="AssetImages\WM_PA0265.jpg" />
+    <Content Include="AssetImages\WM_PA0266.jpg" />
+    <Content Include="AssetImages\WM_PA0267.jpg" />
+    <Content Include="AssetImages\WM_PA0268.jpg" />
+    <Content Include="AssetImages\WM_PA0275.jpg" />
+    <Content Include="AssetImages\WM_PA0276.jpg" />
+    <Content Include="AssetImages\WM_PA0277.jpg" />
+    <Content Include="AssetImages\WM_PA0278.jpg" />
+    <Content Include="AssetImages\WM_PA0279.jpg" />
+    <Content Include="AssetImages\WM_PA0280.jpg" />
+    <Content Include="AssetImages\WM_PA0281.jpg" />
+    <Content Include="AssetImages\WM_PA0282.jpg" />
+    <Content Include="AssetImages\WM_PA0283.jpg" />
+    <Content Include="AssetImages\WM_PA0284.jpg" />
+    <Content Include="AssetImages\WM_PA0285.jpg" />
+    <Content Include="AssetImages\WM_PA0286.jpg" />
+    <Content Include="AssetImages\WM_PA0287.jpg" />
+    <Content Include="AssetImages\WM_PA0288.jpg" />
+    <Content Include="AssetImages\WM_PA0289.jpg" />
+    <Content Include="AssetImages\WM_PA0290.jpg" />
+    <Content Include="AssetImages\WM_PA0291.jpg" />
+    <Content Include="AssetImages\WM_PA0292.jpg" />
+    <Content Include="AssetImages\WM_PA0293.jpg" />
+    <Content Include="AssetImages\WM_PA0294.jpg" />
+    <Content Include="AssetImages\WM_PA0295.jpg" />
+    <Content Include="AssetImages\WM_PA0296.jpg" />
+    <Content Include="AssetImages\WM_PA0297.jpg" />
+    <Content Include="AssetImages\WM_PA0298.jpg" />
+    <Content Include="AssetImages\WM_PA0299.jpg" />
+    <Content Include="AssetImages\WM_PA0300.jpg" />
+    <Content Include="AssetImages\WM_PA0301.jpg" />
+    <Content Include="AssetImages\WM_PE.jpg" />
+    <Content Include="AssetImages\WM_PE0003.jpg" />
+    <Content Include="AssetImages\WM_PE0065.jpg" />
+    <Content Include="AssetImages\WM_PE0072.jpg" />
+    <Content Include="AssetImages\WM_PE0073.jpg" />
+    <Content Include="AssetImages\WM_PE0074.jpg" />
+    <Content Include="AssetImages\WM_RE0011.jpg" />
+    <Content Include="AssetImages\WM_SH0037.jpg" />
+    <Content Include="AssetImages\WM_SH0038.jpg" />
+    <Content Include="AssetImages\WM_TA0001.jpg" />
+    <Content Include="AssetImages\WM_TA0003.jpg" />
+    <Content Include="AssetImages\WM_TA0020.jpg" />
+    <Content Include="AssetImages\WM_TA0022.jpg" />
+    <Content Include="AssetImages\WM_TA0034.jpg" />
+    <Content Include="AssetImages\WM_TA0055.jpg" />
+    <Content Include="AssetImages\WM_TA0059.jpg" />
+    <Content Include="AssetImages\WM_TA0061.jpg" />
+    <Content Include="AssetImages\WM_TA0126.jpg" />
+    <Content Include="AssetImages\WM_WS0184.jpg" />
+    <Content Include="AssetImages\WM_WS0211.jpg" />
+    <Content Include="AssetImages\WM_WS0212.jpg" />
+    <Content Include="AssetImages\WM_WS0213.jpg" />
+    <Content Include="AssetImages\X.jpg" />
+    <Content Include="AssetImages\X2.jpg" />
+    <Content Include="AssetImages\_CH0024.jpg" />
+    <Content Include="AssetImages\_CH0044.jpg" />
+    <Content Include="AssetImages\_CH0084.jpg" />
+    <Content Include="AssetImages\_CH0086.jpg" />
+    <Content Include="AssetImages\_CH0087.jpg" />
+    <Content Include="AssetImages\_CH0094.jpg" />
+    <Content Include="AssetImages\_CH0120.jpg" />
+    <Content Include="AssetImages\_CH0146.jpg" />
+    <Content Include="AssetImages\_CH0147.jpg" />
+    <Content Include="AssetImages\_CH0155.jpg" />
+    <Content Include="AssetImages\_CH0156.jpg" />
+    <Content Include="AssetImages\_CH0157.jpg" />
+    <Content Include="AssetImages\_CH0169.jpg" />
+    <Content Include="AssetImages\_CH0176.jpg" />
+    <Content Include="AssetImages\_CH0177.jpg" />
+    <Content Include="AssetImages\_CH0187.jpg" />
+    <Content Include="AssetImages\_CH0188.jpg" />
+    <Content Include="AssetImages\_CH0191.jpg" />
+    <Content Include="AssetImages\_CH0192.jpg" />
+    <Content Include="AssetImages\_CH0194.jpg" />
+    <Content Include="AssetImages\_CH0201.jpg" />
+    <Content Include="AssetImages\_CH0204.jpg" />
+    <Content Include="AssetImages\_CH0205.jpg" />
+    <Content Include="AssetImages\_CH0208.jpg" />
+    <Content Include="AssetImages\_CH0213.jpg" />
+    <Content Include="AssetImages\_CH0226.jpg" />
+    <Content Include="AssetImages\_CH0227.jpg" />
+    <Content Include="AssetImages\_CH0235.jpg" />
+    <Content Include="AssetImages\_CH0267.jpg" />
+    <Content Include="BaseClasses.aspx" />
+    <Content Include="ClientInventory.html" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\cartStyle.css" />
+    <Content Include="css\data-table.css" />
+    <Content Include="css\form.css" />
+    <Content Include="css\gradient.css" />
+    <Content Include="css\ie\ie7.css" />
+    <Content Include="css\ie\ie8.css" />
+    <Content Include="css\ie\ie9.css" />
+    <Content Include="css\jquery-ui-1.8.18.custom.css" />
+    <Content Include="css\jquery.jqplot.css" />
+    <Content Include="css\layout-fixed.css" />
+    <Content Include="css\layout.css" />
+    <Content Include="css\reset.css" />
+    <Content Include="css\shCore.css" />
+    <Content Include="css\sprite.css" />
+    <Content Include="css\styles.css" />
+    <Content Include="css\themes.css" />
+    <Content Include="css\typography.css" />
+    <Content Include="css\ui-elements.css" />
+    <Content Include="css\wizard.css" />
+    <Content Include="docs\invite.htm" />
+    <Content Include="docs\Template.htm" />
+    <Content Include="HTMLPage1.htm" />
+    <Content Include="images\404.jpg" />
+    <Content Include="images\404.png" />
+    <Content Include="images\40px-Freezebadge.png" />
+    <Content Include="images\add_icon.png" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\ajax-loader\ajax-loader%281%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader%2810%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader%2811%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader%2812%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader%2813%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader%2814%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader%2815%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader%2816%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader%282%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader%283%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader%284%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader%285%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader%286%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader%287%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader%288%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader%289%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader-bar %281%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader-bar %282%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader-bar %283%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader-bar %284%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader-bar %285%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader-bar %286%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader-bar %287%29.gif" />
+    <Content Include="images\ajax-loader\ajax-loader.gif" />
+    <Content Include="images\ajax-loader\_vti_cnf\ajax-loader%281%29.gif" />
+    <Content Include="images\ajax-loader\_vti_cnf\ajax-loader%2810%29.gif" />
+    <Content Include="images\ajax-loader\_vti_cnf\ajax-loader%2811%29.gif" />
+    <Content Include="images\ajax-loader\_vti_cnf\ajax-loader%2812%29.gif" />
+    <Content Include="images\ajax-loader\_vti_cnf\ajax-loader%2813%29.gif" />
+    <Content Include="images\ajax-loader\_vti_cnf\ajax-loader%2815%29.gif" />
+    <Content Include="images\ajax-loader\_vti_cnf\ajax-loader%2816%29.gif" />
+    <Content Include="images\ajax-loader\_vti_cnf\ajax-loader%282%29.gif" />
+    <Content Include="images\ajax-loader\_vti_cnf\ajax-loader%283%29.gif" />
+    <Content Include="images\ajax-loader\_vti_cnf\ajax-loader%284%29.gif" />
+    <Content Include="images\ajax-loader\_vti_cnf\ajax-loader%285%29.gif" />
+    <Content Include="images\ajax-loader\_vti_cnf\ajax-loader%286%29.gif" />
+    <Content Include="images\ajax-loader\_vti_cnf\ajax-loader%287%29.gif" />
+    <Content Include="images\ajax-loader\_vti_cnf\ajax-loader%288%29.gif" />
+    <Content Include="images\ajax-loader\_vti_cnf\ajax-loader%289%29.gif" />
+    <Content Include="images\ajax-loader\_vti_cnf\ajax-loader.gif" />
+    <Content Include="images\alert.png" />
+    <Content Include="images\alpha.png" />
+    <Content Include="images\arrows-ffffff.png" />
+    <Content Include="images\bg-black.png" />
+    <Content Include="images\bg-grid.png" />
+    <Content Include="images\bg-input-focus.png" />
+    <Content Include="images\bg-input.png" />
+    <Content Include="images\button-sprite.png" />
+    <Content Include="images\buttons.gif" />
+    <Content Include="images\checked.png" />
+    <Content Include="images\chevron-overlay.png" />
+    <Content Include="images\chevron.png" />
+    <Content Include="images\chosen-sprite.png" />
+    <Content Include="images\close.png" />
+    <Content Include="images\closed.png" />
+    <Content Include="images\colorbox-img\border.png" />
+    <Content Include="images\colorbox-img\controls.png" />
+    <Content Include="images\colorbox-img\ie6\borderBottomCenter.png" />
+    <Content Include="images\colorbox-img\ie6\borderBottomLeft.png" />
+    <Content Include="images\colorbox-img\ie6\borderBottomRight.png" />
+    <Content Include="images\colorbox-img\ie6\borderMiddleLeft.png" />
+    <Content Include="images\colorbox-img\ie6\borderMiddleRight.png" />
+    <Content Include="images\colorbox-img\ie6\borderTopCenter.png" />
+    <Content Include="images\colorbox-img\ie6\borderTopLeft.png" />
+    <Content Include="images\colorbox-img\ie6\borderTopRight.png" />
+    <Content Include="images\colorbox-img\ie6\_vti_cnf\borderBottomCenter.png" />
+    <Content Include="images\colorbox-img\ie6\_vti_cnf\borderBottomLeft.png" />
+    <Content Include="images\colorbox-img\ie6\_vti_cnf\borderBottomRight.png" />
+    <Content Include="images\colorbox-img\ie6\_vti_cnf\borderMiddleLeft.png" />
+    <Content Include="images\colorbox-img\ie6\_vti_cnf\borderMiddleRight.png" />
+    <Content Include="images\colorbox-img\ie6\_vti_cnf\borderTopCenter.png" />
+    <Content Include="images\colorbox-img\ie6\_vti_cnf\borderTopLeft.png" />
+    <Content Include="images\colorbox-img\ie6\_vti_cnf\borderTopRight.png" />
+    <Content Include="images\colorbox-img\loading.gif" />
+    <Content Include="images\colorbox-img\loading_background.png" />
+    <Content Include="images\colorbox-img\overlay.png" />
+    <Content Include="images\colorbox-img\_vti_cnf\border.png" />
+    <Content Include="images\colorbox-img\_vti_cnf\controls.png" />
+    <Content Include="images\colorbox-img\_vti_cnf\loading.gif" />
+    <Content Include="images\colorbox-img\_vti_cnf\loading_background.png" />
+    <Content Include="images\colorbox-img\_vti_cnf\overlay.png" />
+    <Content Include="images\confirm\body_bg.jpg" />
+    <Content Include="images\confirm\buttons.png" />
+    <Content Include="images\confirm\header_bg.jpg" />
+    <Content Include="images\confirm\ie.png" />
+    <Content Include="images\confirm\_vti_cnf\ie.png" />
+    <Content Include="images\delete_file_icon 20x20.png" />
+    <Content Include="images\details_close.png" />
+    <Content Include="images\details_open.png" />
+    <Content Include="images\dot.png" />
+    <Content Include="images\el-finder\icons-big.png" />
+    <Content Include="images\el-finder\icons-small.png" />
+    <Content Include="images\el-finder\ql.png" />
+    <Content Include="images\el-finder\spinner.gif" />
+    <Content Include="images\el-finder\toolbar.png" />
+    <Content Include="images\el-finder\_vti_cnf\icons-big.png" />
+    <Content Include="images\el-finder\_vti_cnf\icons-small.png" />
+    <Content Include="images\el-finder\_vti_cnf\ql.png" />
+    <Content Include="images\el-finder\_vti_cnf\spinner.gif" />
+    <Content Include="images\el-finder\_vti_cnf\toolbar.png" />
+    <Content Include="images\email-header.jpg" />
+    <Content Include="images\email-header.png" />
+    <Content Include="images\error.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\fullview01.jpg" />
+    <Content Include="images\gallery-img\01.png" />
+    <Content Include="images\gallery-img\02.png" />
+    <Content Include="images\gallery-img\03.png" />
+    <Content Include="images\gallery-img\04.png" />
+    <Content Include="images\gallery-img\amanda_yg.jpg" />
+    <Content Include="images\gallery-img\amanda_yg_thumb.jpg" />
+    <Content Include="images\gallery-img\bianca_yg.jpg" />
+    <Content Include="images\gallery-img\bianca_yg_thumb.jpg" />
+    <Content Include="images\gallery-img\britt_yg.jpg" />
+    <Content Include="images\gallery-img\britt_yg_2.jpg" />
+    <Content Include="images\gallery-img\britt_yg_2_thumb.jpg" />
+    <Content Include="images\gallery-img\britt_yg_3.jpg" />
+    <Content Include="images\gallery-img\britt_yg_3_thumb.jpg" />
+    <Content Include="images\gallery-img\britt_yg_thumb.jpg" />
+    <Content Include="images\gallery-img\gisela_yg.jpg" />
+    <Content Include="images\gallery-img\gisela_yg_thumb.jpg" />
+    <Content Include="images\gallery-img\grace_yg_2.jpg" />
+    <Content Include="images\gallery-img\grace_yg_2_thumb.jpg" />
+    <Content Include="images\gallery-img\hannah_yg.jpg" />
+    <Content Include="images\gallery-img\hannah_yg_thumb.jpg" />
+    <Content Include="images\gallery-img\heather_yg.jpg" />
+    <Content Include="images\gallery-img\heather_yg_2.jpg" />
+    <Content Include="images\gallery-img\heather_yg_2_thumb.jpg" />
+    <Content Include="images\gallery-img\heather_yg_thumb.jpg" />
+    <Content Include="images\gallery-img\mikaela_yg.jpg" />
+    <Content Include="images\gallery-img\mikaela_yg_2.jpg" />
+    <Content Include="images\gallery-img\mikaela_yg_2_thumb.jpg" />
+    <Content Include="images\gallery-img\mikaela_yg_thumb.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\01.png" />
+    <Content Include="images\gallery-img\_vti_cnf\02.png" />
+    <Content Include="images\gallery-img\_vti_cnf\03.png" />
+    <Content Include="images\gallery-img\_vti_cnf\amanda_yg.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\amanda_yg_thumb.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\bianca_yg.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\bianca_yg_thumb.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\britt_yg.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\britt_yg_2.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\britt_yg_2_thumb.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\britt_yg_3.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\britt_yg_3_thumb.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\britt_yg_thumb.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\gisela_yg.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\gisela_yg_thumb.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\grace_yg_2.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\grace_yg_2_thumb.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\hannah_yg.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\hannah_yg_thumb.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\heather_yg.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\heather_yg_2.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\heather_yg_2_thumb.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\heather_yg_thumb.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\mikaela_yg.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\mikaela_yg_2.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\mikaela_yg_2_thumb.jpg" />
+    <Content Include="images\gallery-img\_vti_cnf\mikaela_yg_thumb.jpg" />
+    <Content Include="images\gthumb.jpg" />
+    <Content Include="images\home-link.png" />
+    <Content Include="images\hover-magnify.png" />
+    <Content Include="images\hue.png" />
+    <Content Include="images\IconHome.gif" />
+    <Content Include="images\img-raty\cancel-off-big.png" />
+    <Content Include="images\img-raty\cancel-off.png" />
+    <Content Include="images\img-raty\cancel-on-big.png" />
+    <Content Include="images\img-raty\cancel-on.png" />
+    <Content Include="images\img-raty\face-a-off.png" />
+    <Content Include="images\img-raty\face-a.png" />
+    <Content Include="images\img-raty\face-b-off.png" />
+    <Content Include="images\img-raty\face-b.png" />
+    <Content Include="images\img-raty\face-c-off.png" />
+    <Content Include="images\img-raty\face-c.png" />
+    <Content Include="images\img-raty\face-d-off.png" />
+    <Content Include="images\img-raty\face-d.png" />
+    <Content Include="images\img-raty\face-off.png" />
+    <Content Include="images\img-raty\medal-off.png" />
+    <Content Include="images\img-raty\medal-on.png" />
+    <Content Include="images\img-raty\star-half-big.png" />
+    <Content Include="images\img-raty\star-half.png" />
+    <Content Include="images\img-raty\star-off-big.png" />
+    <Content Include="images\img-raty\star-off.png" />
+    <Content Include="images\img-raty\star-on-big.png" />
+    <Content Include="images\img-raty\star-on.png" />
+    <Content Include="images\indicator.gif" />
+    <Content Include="images\ivue-logo.png" />
+    <Content Include="images\ivue-txt.png" />
+    <Content Include="images\ivue-txt2.png" />
+    <Content Include="images\ivueLogo.png" />
+    <Content Include="images\js-tree\ajax-loader.gif" />
+    <Content Include="images\js-tree\file.gif" />
+    <Content Include="images\js-tree\folder-closed.gif" />
+    <Content Include="images\js-tree\folder.gif" />
+    <Content Include="images\js-tree\minus.gif" />
+    <Content Include="images\js-tree\plus.gif" />
+    <Content Include="images\js-tree\treeview-black-line.gif" />
+    <Content Include="images\js-tree\treeview-black.gif" />
+    <Content Include="images\js-tree\treeview-default-line.gif" />
+    <Content Include="images\js-tree\treeview-default.gif" />
+    <Content Include="images\js-tree\treeview-famfamfam-line.gif" />
+    <Content Include="images\js-tree\treeview-famfamfam.gif" />
+    <Content Include="images\js-tree\treeview-gray-line.gif" />
+    <Content Include="images\js-tree\treeview-gray.gif" />
+    <Content Include="images\js-tree\treeview-red-line.gif" />
+    <Content Include="images\js-tree\treeview-red.gif" />
+    <Content Include="images\js-tree\_vti_cnf\ajax-loader.gif" />
+    <Content Include="images\js-tree\_vti_cnf\file.gif" />
+    <Content Include="images\js-tree\_vti_cnf\folder-closed.gif" />
+    <Content Include="images\js-tree\_vti_cnf\folder.gif" />
+    <Content Include="images\js-tree\_vti_cnf\treeview-black-line.gif" />
+    <Content Include="images\js-tree\_vti_cnf\treeview-black.gif" />
+    <Content Include="images\js-tree\_vti_cnf\treeview-default-line.gif" />
+    <Content Include="images\js-tree\_vti_cnf\treeview-default.gif" />
+    <Content Include="images\js-tree\_vti_cnf\treeview-famfamfam-line.gif" />
+    <Content Include="images\js-tree\_vti_cnf\treeview-famfamfam.gif" />
+    <Content Include="images\js-tree\_vti_cnf\treeview-gray-line.gif" />
+    <Content Include="images\js-tree\_vti_cnf\treeview-gray.gif" />
+    <Content Include="images\js-tree\_vti_cnf\treeview-red-line.gif" />
+    <Content Include="images\js-tree\_vti_cnf\treeview-red.gif" />
+    <Content Include="images\layout-sprite.png" />
+    <Content Include="images\list-icons\alarm.png" />
+    <Content Include="images\list-icons\ask.png" />
+    <Content Include="images\list-icons\award.png" />
+    <Content Include="images\list-icons\bulb.png" />
+    <Content Include="images\list-icons\clip.png" />
+    <Content Include="images\list-icons\err.png" />
+    <Content Include="images\list-icons\flag.png" />
+    <Content Include="images\list-icons\folder.png" />
+    <Content Include="images\list-icons\globe.png" />
+    <Content Include="images\list-icons\heart.png" />
+    <Content Include="images\list-icons\info.png" />
+    <Content Include="images\list-icons\medal-gold.png" />
+    <Content Include="images\list-icons\pin.png" />
+    <Content Include="images\list-icons\plus.png" />
+    <Content Include="images\list-icons\tick.png" />
+    <Content Include="images\list-icons\trophy.png" />
+    <Content Include="images\list-icons\_vti_cnf\alarm.png" />
+    <Content Include="images\list-icons\_vti_cnf\ask.png" />
+    <Content Include="images\list-icons\_vti_cnf\award.png" />
+    <Content Include="images\list-icons\_vti_cnf\clip.png" />
+    <Content Include="images\list-icons\_vti_cnf\err.png" />
+    <Content Include="images\list-icons\_vti_cnf\flag.png" />
+    <Content Include="images\list-icons\_vti_cnf\folder.png" />
+    <Content Include="images\list-icons\_vti_cnf\globe.png" />
+    <Content Include="images\list-icons\_vti_cnf\heart.png" />
+    <Content Include="images\list-icons\_vti_cnf\info.png" />
+    <Content Include="images\list-icons\_vti_cnf\medal-gold.png" />
+    <Content Include="images\list-icons\_vti_cnf\pin.png" />
+    <Content Include="images\list-icons\_vti_cnf\plus.png" />
+    <Content Include="images\list-icons\_vti_cnf\tick.png" />
+    <Content Include="images\list-icons\_vti_cnf\trophy.png" />
+    <Content Include="images\loader.gif" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\logo-bingo.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\ninja.png" />
+    <Content Include="images\off.png" />
+    <Content Include="images\on.png" />
+    <Content Include="images\open.png" />
+    <Content Include="images\overlays\01.png" />
+    <Content Include="images\overlays\02.png" />
+    <Content Include="images\overlays\03.png" />
+    <Content Include="images\overlays\04.png" />
+    <Content Include="images\overlays\05.png" />
+    <Content Include="images\overlays\06.png" />
+    <Content Include="images\overlays\07.png" />
+    <Content Include="images\overlays\08.png" />
+    <Content Include="images\overlays\09.png" />
+    <Content Include="images\overlays\10.png" />
+    <Content Include="images\overlays\11.png" />
+    <Content Include="images\overlays\12.png" />
+    <Content Include="images\overlays\13.png" />
+    <Content Include="images\overlays\14.png" />
+    <Content Include="images\overlays\15.png" />
+    <Content Include="images\photo_60x60.jpg" />
+    <Content Include="images\plus.gif" />
+    <Content Include="images\progress.gif" />
+    <Content Include="images\saturation.png" />
+    <Content Include="images\shadow.png" />
+    <Content Include="images\shopping-cart.png" />
+    <Content Include="images\slider-handle.png" />
+    <Content Include="images\slider_center.png" />
+    <Content Include="images\slider_left.png" />
+    <Content Include="images\slider_right.png" />
+    <Content Include="images\sprite-icons\action-sprite.png" />
+    <Content Include="images\sprite-icons\black_24.png" />
+    <Content Include="images\sprite-icons\cs_h.png" />
+    <Content Include="images\sprite-icons\extras\icon16_color_cr.png" />
+    <Content Include="images\sprite-icons\extras\icon24x24black.png" />
+    <Content Include="images\sprite-icons\extras\icon32x32black.png" />
+    <Content Include="images\sprite-icons\extras\icon_color_clr.png" />
+    <Content Include="images\sprite-icons\extras\icon_grb24x24.png" />
+    <Content Include="images\sprite-icons\icon-black.png" />
+    <Content Include="images\sprite-icons\icons-a.png" />
+    <Content Include="images\sprite-icons\icons-color.png" />
+    <Content Include="images\sprite-icons\icon_sl.png" />
+    <Content Include="images\sprite-icons\layout-icons.png" />
+    <Content Include="images\sprite-icons\_vti_cnf\action-sprite.png" />
+    <Content Include="images\sprite-icons\_vti_cnf\black_24.png" />
+    <Content Include="images\sprite-icons\_vti_cnf\icon-black.png" />
+    <Content Include="images\sprite-icons\_vti_cnf\icons-a.png" />
+    <Content Include="images\sprite-icons\_vti_cnf\icons-color.png" />
+    <Content Include="images\sprite-icons\_vti_cnf\icon_sl.png" />
+    <Content Include="images\sprite-icons\_vti_cnf\layout-icons.png" />
+    <Content Include="images\sprite.png" />
+    <Content Include="images\start.png" />
+    <Content Include="images\switch.gif" />
+    <Content Include="images\switch_minus.gif" />
+    <Content Include="images\switch_plus.gif" />
+    <Content Include="images\table-tools\background.png" />
+    <Content Include="images\table-tools\collection.png" />
+    <Content Include="images\table-tools\collection_hover.png" />
+    <Content Include="images\table-tools\copy.png" />
+    <Content Include="images\table-tools\copy_hover.png" />
+    <Content Include="images\table-tools\csv.png" />
+    <Content Include="images\table-tools\csv_hover.png" />
+    <Content Include="images\table-tools\pdf.png" />
+    <Content Include="images\table-tools\pdf_hover.png" />
+    <Content Include="images\table-tools\print.png" />
+    <Content Include="images\table-tools\print_hover.png" />
+    <Content Include="images\table-tools\xls.png" />
+    <Content Include="images\table-tools\xls_hover.png" />
+    <Content Include="images\table-tools\_vti_cnf\background.png" />
+    <Content Include="images\table-tools\_vti_cnf\collection.png" />
+    <Content Include="images\table-tools\_vti_cnf\collection_hover.png" />
+    <Content Include="images\table-tools\_vti_cnf\copy.png" />
+    <Content Include="images\table-tools\_vti_cnf\copy_hover.png" />
+    <Content Include="images\table-tools\_vti_cnf\csv.png" />
+    <Content Include="images\table-tools\_vti_cnf\csv_hover.png" />
+    <Content Include="images\table-tools\_vti_cnf\pdf.png" />
+    <Content Include="images\table-tools\_vti_cnf\pdf_hover.png" />
+    <Content Include="images\table-tools\_vti_cnf\print.png" />
+    <Content Include="images\table-tools\_vti_cnf\print_hover.png" />
+    <Content Include="images\table-tools\_vti_cnf\xls.png" />
+    <Content Include="images\table-tools\_vti_cnf\xls_hover.png" />
+    <Content Include="images\tag-edit\cross.png" />
+    <Content Include="images\tag-edit\delete.png" />
+    <Content Include="images\tag-edit\disc.png" />
+    <Content Include="images\tag-edit\edit.png" />
+    <Content Include="images\tag-edit\go.png" />
+    <Content Include="images\tag-edit\tick.png" />
+    <Content Include="images\tag-edit\undo.png" />
+    <Content Include="images\tbl-img\back_disabled.png" />
+    <Content Include="images\tbl-img\back_enabled.png" />
+    <Content Include="images\tbl-img\back_enabled_hover.png" />
+    <Content Include="images\tbl-img\forward_disabled.png" />
+    <Content Include="images\tbl-img\forward_enabled.png" />
+    <Content Include="images\tbl-img\forward_enabled_hover.png" />
+    <Content Include="images\tbl-img\sort_asc.png" />
+    <Content Include="images\tbl-img\sort_asc_disabled.png" />
+    <Content Include="images\tbl-img\sort_both.png" />
+    <Content Include="images\tbl-img\sort_desc.png" />
+    <Content Include="images\tbl-img\sort_desc_disabled.png" />
+    <Content Include="images\tbl-img\_vti_cnf\back_disabled.png" />
+    <Content Include="images\tbl-img\_vti_cnf\back_enabled.png" />
+    <Content Include="images\tbl-img\_vti_cnf\back_enabled_hover.png" />
+    <Content Include="images\tbl-img\_vti_cnf\forward_disabled.png" />
+    <Content Include="images\tbl-img\_vti_cnf\forward_enabled.png" />
+    <Content Include="images\tbl-img\_vti_cnf\forward_enabled_hover.png" />
+    <Content Include="images\tbl-img\_vti_cnf\sort_asc.png" />
+    <Content Include="images\tbl-img\_vti_cnf\sort_asc_disabled.png" />
+    <Content Include="images\tbl-img\_vti_cnf\sort_both.png" />
+    <Content Include="images\tbl-img\_vti_cnf\sort_desc.png" />
+    <Content Include="images\tbl-img\_vti_cnf\sort_desc_disabled.png" />
+    <Content Include="images\TiffanySig.png" />
+    <Content Include="images\toolbar.gif" />
+    <Content Include="images\ui-img\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="images\ui-img\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="images\ui-img\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="images\ui-img\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="images\ui-img\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="images\ui-img\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="images\ui-img\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="images\ui-img\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="images\ui-img\ui-icons_222222_256x240.png" />
+    <Content Include="images\ui-img\ui-icons_2e83ff_256x240.png" />
+    <Content Include="images\ui-img\ui-icons_454545_256x240.png" />
+    <Content Include="images\ui-img\ui-icons_888888_256x240.png" />
+    <Content Include="images\ui-img\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="images\ui-img\_vti_cnf\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="images\ui-img\_vti_cnf\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="images\ui-img\_vti_cnf\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="images\ui-img\_vti_cnf\ui-icons_222222_256x240.png" />
+    <Content Include="images\ui-img\_vti_cnf\ui-icons_2e83ff_256x240.png" />
+    <Content Include="images\ui-img\_vti_cnf\ui-icons_454545_256x240.png" />
+    <Content Include="images\ui-img\_vti_cnf\ui-icons_888888_256x240.png" />
+    <Content Include="images\ui-img\_vti_cnf\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="images\unchecked.gif" />
+    <Content Include="images\user-thumb.png" />
+    <Content Include="images\user-thumb1.png" />
+    <Content Include="images\user_thumb.png" />
+    <Content Include="images\wam-logo.png" />
+    <Content Include="images\weg-logo.png" />
+    <Content Include="images\x.png" />
+    <Content Include="images\x2.png" />
+    <Content Include="images\_vti_cnf\alert.png" />
+    <Content Include="images\_vti_cnf\alpha.png" />
+    <Content Include="images\_vti_cnf\bg-black.png" />
+    <Content Include="images\_vti_cnf\button-sprite.png" />
+    <Content Include="images\_vti_cnf\buttons.gif" />
+    <Content Include="images\_vti_cnf\checked.png" />
+    <Content Include="images\_vti_cnf\chevron-overlay.png" />
+    <Content Include="images\_vti_cnf\chevron.png" />
+    <Content Include="images\_vti_cnf\chosen-sprite.png" />
+    <Content Include="images\_vti_cnf\closed.png" />
+    <Content Include="images\_vti_cnf\dot.png" />
+    <Content Include="images\_vti_cnf\error.png" />
+    <Content Include="images\_vti_cnf\fullview01.jpg" />
+    <Content Include="images\_vti_cnf\gthumb.jpg" />
+    <Content Include="images\_vti_cnf\home-link.png" />
+    <Content Include="images\_vti_cnf\hover-magnify.png" />
+    <Content Include="images\_vti_cnf\hue.png" />
+    <Content Include="images\_vti_cnf\IconHome.gif" />
+    <Content Include="images\_vti_cnf\indicator.gif" />
+    <Content Include="images\_vti_cnf\layout-sprite.png" />
+    <Content Include="images\_vti_cnf\logo-bingo.png" />
+    <Content Include="images\_vti_cnf\logo.png" />
+    <Content Include="images\_vti_cnf\off.png" />
+    <Content Include="images\_vti_cnf\on.png" />
+    <Content Include="images\_vti_cnf\open.png" />
+    <Content Include="images\_vti_cnf\photo_60x60.jpg" />
+    <Content Include="images\_vti_cnf\progress.gif" />
+    <Content Include="images\_vti_cnf\saturation.png" />
+    <Content Include="images\_vti_cnf\slider_center.png" />
+    <Content Include="images\_vti_cnf\slider_left.png" />
+    <Content Include="images\_vti_cnf\slider_right.png" />
+    <Content Include="images\_vti_cnf\sprite.png" />
+    <Content Include="images\_vti_cnf\switch.gif" />
+    <Content Include="images\_vti_cnf\toolbar.gif" />
+    <Content Include="images\_vti_cnf\user-thumb1.png" />
+    <Content Include="images\_vti_cnf\user_thumb.png" />
+    <Content Include="images\_vti_cnf\x.png" />
+    <Content Include="js\accordion.jquery.js" />
+    <Content Include="js\arg.js.v1.1.js" />
+    <Content Include="js\autogrow.jquery.js" />
+    <Content Include="js\bootstrap-colorpicker.js" />
+    <Content Include="js\bootstrap-datepicker.js" />
+    <Content Include="js\bootstrap-dropdown.js" />
+    <Content Include="js\check-all.jquery.js" />
+    <Content Include="js\chosen.jquery.js" />
+    <Content Include="js\ColVis.min.js" />
+    <Content Include="js\custom-scripts.js" />
+    <Content Include="js\data-table.jquery.js" />
+    <Content Include="js\duallist.jquery.js" />
+    <Content Include="js\DualList2.js" />
+    <Content Include="js\easing.jquery.js" />
+    <Content Include="js\elfinder.min.js" />
+    <Content Include="js\excanvas.min.js" />
+    <Content Include="js\fg.menu.js" />
+    <Content Include="js\full-calendar.jquery.js" />
+    <Content Include="js\input-limiter.jquery.js" />
+    <Content Include="js\inputmask.jquery.js" />
+    <Content Include="js\InventoryScripts.js" />
+    <Content Include="js\iphone-style-checkbox.jquery.js" />
+    <Content Include="js\jeditable.jquery.js" />
+    <Content Include="js\jquery-1.7.1-vsdoc.js" />
+    <Content Include="js\jquery-1.7.1.min.js" />
+    <Content Include="js\jquery-ui-1.8.18.custom.min.js" />
+    <Content Include="js\jquery.autocomplete.min.js" />
+    <Content Include="js\jquery.cleditor.js" />
+    <Content Include="js\jquery.collapse.js" />
+    <Content Include="js\jquery.colorbox-min.js" />
+    <Content Include="js\jquery.confirm.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="js\jquery.dataTables.columnFilter.js" />
+    <Content Include="js\jquery.idTabs.min.js" />
+    <Content Include="js\jquery.jBreadCrumb.1.1.js" />
+    <Content Include="js\jquery.jqplot.min.js" />
+    <Content Include="js\jquery.multiFieldExtender.min.js" />
+    <Content Include="js\jquery.noty.js" />
+    <Content Include="js\jquery.peity.js" />
+    <Content Include="js\jquery.simplemodal.js" />
+    <Content Include="js\jquery.tagsinput.js" />
+    <Content Include="js\jquery.tipsy.js" />
+    <Content Include="js\jquery.ui.combobox.js" />
+    <Content Include="js\jquery.ui.touch-punch.js" />
+    <Content Include="js\localdata.js" />
+    <Content Include="js\meta-data.jquery.js" />
+    <Content Include="js\mosaic.1.0.1.min.js" />
+    <Content Include="js\quicksand.jquery.js" />
+    <Content Include="js\raty.jquery.js" />
+    <Content Include="js\selectToUISlider.jQuery.js" />
+    <Content Include="js\smart-wizard.jquery.js" />
+    <Content Include="js\stepy.jquery.js" />
+    <Content Include="js\sticky.full.js" />
+    <Content Include="js\TableTools.min.js" />
+    <Content Include="js\Template Script Examples.js" />
+    <Content Include="js\treeview.jquery.js" />
+    <Content Include="js\ui-accordion.jquery.js" />
+    <Content Include="js\uniform.jquery.js" />
+    <Content Include="js\vaidation.jquery.js" />
+    <Content Include="js\weg-custom-scripts.js" />
+    <Content Include="js\ZeroClipboard.js" />
+    <Content Include="login.aspx" />
+    <Content Include="pageLogic.aspx" />
+    <Content Include="register.aspx" />
+    <Content Include="template.htm" />
+    <Content Include="User-Invite.html" />
+    <Content Include="UserInvite.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseClasses.aspx.designer.vb">
+      <DependentUpon>BaseClasses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BaseClasses.aspx.vb">
+      <DependentUpon>BaseClasses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="login.aspx.designer.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="login.aspx.vb">
+      <DependentUpon>login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="pageLogic.aspx.designer.vb">
+      <DependentUpon>pageLogic.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pageLogic.aspx.vb">
+      <DependentUpon>pageLogic.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="register.aspx.designer.vb">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="register.aspx.vb">
+      <DependentUpon>register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserInvite.aspx.designer.vb">
+      <DependentUpon>UserInvite.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserInvite.aspx.vb">
+      <DependentUpon>UserInvite.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\email-header.psd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="emails\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55628</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
